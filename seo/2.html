@@ -1,0 +1,33 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>iRacing力反馈配置指南：主流直驱方向盘FFB最优设置 — 直驱兼容库</title>
+<meta name="description" content="刚拿到直驱方向盘、进iRacing一开跑就觉得震到手麻、或者毫无感觉像在转玩具？你不是一个人。直驱的力矩比皮带轮大几倍，iRacing的FFB系统又有好几层参数叠在一起，随便套个网上的数值大概率不对——因为每把盘、每个人的手感偏好差距太大。这篇就是想跟你聊聊怎么一步步把FFB调到">
+<meta property="og:type" content="article"><meta property="og:title" content="iRacing力反馈配置指南：主流直驱方向盘FFB最优设置 — 直驱兼容库">
+<style>
+:root{--ink:#0d1b2a;--bg:#f5f8fb;--card:#fff;--teal:#0b7d73;--muted:#5a6b7b;--line:#e3eaf1}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC",system-ui,sans-serif;color:var(--ink);
+background:var(--bg);line-height:1.75;-webkit-text-size-adjust:100%}
+.wrap{max-width:680px;margin:0 auto;padding:24px 20px 60px}
+.back{display:inline-block;color:var(--teal);text-decoration:none;font-size:.9rem;margin-bottom:20px}
+h1{font-size:clamp(1.5rem,1.2rem+2vw,2rem);line-height:1.25;letter-spacing:-.02em;margin-bottom:16px}
+.intro{font-size:1.08rem;color:#26323f;margin-bottom:8px}
+h2{font-size:1.15rem;margin:26px 0 6px;letter-spacing:-.01em}
+p{margin-bottom:6px;color:#2c3a47}
+.takeaway{background:#e3f4f1;border-left:3px solid var(--teal);border-radius:10px;
+padding:16px 18px;margin:28px 0;font-weight:600}
+.cta{display:block;text-align:center;background:linear-gradient(135deg,#0e9488,#0b7d73);
+color:#fff;text-decoration:none;font-weight:700;padding:15px;border-radius:12px;margin:24px 0}
+.disc{background:#fff8ec;border:1px solid #f4e3c1;color:#7a5c1e;border-radius:10px;
+padding:12px 14px;font-size:.82rem;line-height:1.6;margin-top:24px}
+footer{color:#8a98a6;font-size:.78rem;margin-top:20px;text-align:center}
+</style></head><body><div class="wrap">
+<a class="back" href="../index.html">← 回到 直驱兼容库</a>
+<h1>iRacing力反馈配置指南：主流直驱方向盘FFB最优设置</h1>
+<p class="intro">刚拿到直驱方向盘、进iRacing一开跑就觉得震到手麻、或者毫无感觉像在转玩具？你不是一个人。直驱的力矩比皮带轮大几倍，iRacing的FFB系统又有好几层参数叠在一起，随便套个网上的数值大概率不对——因为每把盘、每个人的手感偏好差距太大。这篇就是想跟你聊聊怎么一步步把FFB调到「对的感觉」，省得你像我当年一样瞎折腾两个星期。</p>
+<h2>先搞清楚FFB信号链</h2><p>iRacing输出的FFB信号会经过两层处理：游戏内的「Max Force」决定信号峰值有多强，方向盘基座的「Overall Strength」再把这个信号放大或缩小一遍。两个旋钮都开满不等于手感最好，反而容易裁切信号、失去路面细节。基本思路是：先把基座Strength调到一个中等保守的位置，再靠游戏内参数来塑形。</p><h2>Max Force怎么定最关键</h2><p>Max Force告诉iRacing：当轮胎受力达到多少牛米时，输出100%的FFB信号。设太低，方向盘动不动就「饱和」，全程都是一样的重感，路感全没；设太高，大部分时间信号太弱，也感觉不到什么。建议的方法是：先设一个偏低的值跑几圈，看左下角FFB指示条有没有频繁爆红——有的话往上加，直到只有极限压弯时偶尔碰红为止。</p><h2>Wheel Force和基座Strength配合</h2><p>iRacing里的「Wheel Force」对应你方向盘的额定最大力矩。直驱盘普遍峰值力矩很大，但日常开车根本用不到那么强。可以把这个值填略低于方向盘标称值，感觉轻一点但路感反而更丰富。基座的Overall Strength同样别开满，留点余量既保护你的手腕，也保护电机寿命。</p><h2>Damping和Min Force别忽略</h2><p>iRacing内的Damping会给方向盘加一层「粘性阻力」，让转向动作更稳重、不那么神经质。直驱盘本身惯性就小，稍微加点Damping（在5到15之间试）往往比全关好开。Min Force是给低速细小路感加个门槛，防止方向盘乱抖，设太高会过滤掉有用信息，一般保持在5以内或者直接关掉就好。</p><h2>每辆车都要单独微调</h2><p>iRacing里Formula车和GT车的转向力矩特性差很多，同一组参数从一辆换到另一辆大概率要重新微调。建议养成习惯：每开一辆新车，先跑几圈感受一下力反馈的轻重，再决定要不要动Max Force。很多人喜欢去Reddit的r/iRacing版块找同款方向盘用户的「起始参数」作为参考，比从零摸索快多了——只是记住别直接照搬，根据自己手感微调才算真正调好。</p>
+<div class="takeaway">👉 今晚就打开iRacing的FFB界面，把Max Force先调到比你现在低20%的位置跑几圈，感受一下路面细节有没有变多——这一步能立刻告诉你你目前的设置是「过载饱和」还是「信号太软」，方向明确了再往下调就快了。</div>
+<a class="cta" href="../index.html#join">想要完整避坑清单 + 内测?点这里 →</a>
+<div class="disc">⚠️ 本文为面向在澳华人的经验参考,非移民法律意见。具体政策、分数、费用、条款以官方(immi.homeaffairs.gov.au)及持牌移民代理/律师为准。</div>
+<footer>© 直驱兼容库</footer>
+</div></body></html>
