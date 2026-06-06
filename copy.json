@@ -1,0 +1,70 @@
+{
+  "brand": "DD Compat",
+  "tagline": "The direct-drive wheel compatibility database for sim racers",
+  "hero_headline": "Check compatibility before you buy",
+  "hero_sub": "Cross-brand matrix + adapter recommendations + sim FFB guides",
+  "pains": [
+    "Buy a new wheel only to find it doesn't fit your base—$1000+ wasted",
+    "After the Fanatec crisis, can you swap old wheels to new bases? No neutral answer online",
+    "Brands only promote their own ecosystem; no cross-brand compatibility data"
+  ],
+  "features": [
+    {
+      "title": "Compatibility Matrix",
+      "desc": "Brand × base × wheel × quick-release × pedals—query in seconds"
+    },
+    {
+      "title": "Adapter Recommendations",
+      "desc": "What adapters you need, which standard, which model to buy—no guesswork"
+    },
+    {
+      "title": "Sim FFB Matching",
+      "desc": "How force feedback performs in iRacing/Assetto; feature limits at a glance"
+    },
+    {
+      "title": "Parts Sourcing",
+      "desc": "After verifying compatibility, find retailers and secondhand gear—one-stop shop"
+    }
+  ],
+  "how": [
+    {
+      "step": "1. Input Your Setup",
+      "desc": "Select wheel brand and base model, or paste your config"
+    },
+    {
+      "step": "2. See Results Instantly",
+      "desc": "Compatibility verdict, missing adapters, required firmware—all in one place"
+    },
+    {
+      "step": "3. Find and Install",
+      "desc": "Recommended retailers and used markets; complete your upgrade"
+    }
+  ],
+  "proof": "After the Fanatec crisis, 'can I swap this wheel to that base?' searches spiked. We've built the compatibility matrix for 100+ top setups and are recruiting beta testers.",
+  "cta": "Join Beta",
+  "cta_sub": "Free. Early beta users get exclusive sim gear discounts + lifetime free access",
+  "faq": [
+    {
+      "q": "Is the data accurate?",
+      "a": "Verified by pro racers and hardware enthusiasts; every combo has sources cited. Report errors anytime and we'll fix it."
+    },
+    {
+      "q": "Why haven't official brands done this?",
+      "a": "Brands only want to talk about their own ecosystem. Objective cross-brand compatibility data would hurt sales, so this gap stayed unfilled."
+    },
+    {
+      "q": "Will this become paid later?",
+      "a": "Core compatibility search stays free forever. We cover costs through adapter affiliate revenue and premium subscriptions. We never sell your data."
+    }
+  ],
+  "seo_pages": [
+    "Fanatec to Moza/Simagic wheel swap: full compatibility matrix",
+    "Racing wheel quick-release adapter standards: cross-brand comparison",
+    "iRacing force feedback setup: optimal FFB settings for direct-drive wheels",
+    "Simxperience vs Simagic Alpha Ultra: direct-drive wheel performance",
+    "Sim racing wheel setup mistakes: compatibility pitfalls for beginners",
+    "Used direct-drive wheels: compatibility issues that kill resale value"
+  ],
+  "disclaimer": "This tool provides compatibility guidance based on community data. Always verify with manufacturers before purchasing.",
+  "lang": "en"
+}
